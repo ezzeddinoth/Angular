@@ -1,0 +1,6 @@
+<div *ngIf="bereich">
+    <p>Bereich: {{bereich}}</p>
+    <form #form="ngForm" (ngSubmit)="onClickremoveBereich()">
+        <input type="submit" value="removebereich">
+    </form>
+</div>

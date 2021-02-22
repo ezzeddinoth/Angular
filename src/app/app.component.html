@@ -1,0 +1,55 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img width="40" alt="VW Logo" src="./assets/vw-logo.jpg" />
+
+  <nav>
+    <ul>
+      <li> <a routerLink="/teile" routerLinkActive="active">Teile</a></li>
+      <li> <a routerLink="/team" routerLinkActive="active">Mitarbeiter</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="spacer"></div>
+
+  <img width="40" alt="MVI Logo" src="./assets/mvi-proplant.jpg" />
+
+</div>
+
+
+<!-- Status -->
+<div class="status">
+  <app-remove-bereich class="remove-bereich"></app-remove-bereich>
+
+  <div class="spacer"></div>
+
+  <app-logout class="logout"></app-logout>
+
+</div>
+
+
+<div class="content" role="main">
+
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+
+    <span>{{ title }} </span>
+
+  </div>
+
+</div>
+
+
+
+<router-outlet></router-outlet>
+
+
+<footer>
+  <p>Developed By: MVI-Proplant<br>
+    <a href="mailto:somename@mvi.com">somename@mvi.com</a>
+  </p>
+</footer>
+
+
+<app-scanning-test></app-scanning-test>

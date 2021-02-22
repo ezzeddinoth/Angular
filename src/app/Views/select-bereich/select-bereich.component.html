@@ -1,0 +1,12 @@
+<div id="setBereich">
+   <h1>Zur Konfiguration, bitte Bereich eintragen!</h1>
+   <form [formGroup]="formData" (ngSubmit)="onClickSubmit(formData.value)" class="form-setBereich">
+
+      <label for="inputBereich">Bereich</label>
+      <input type="text" id="bereich" formControlName="bereich" placeholder="Bereich" required autofocus>
+      <button type="submit">Eintragen</button>
+   </form>
+   <div *ngIf="ErrorMessage" style="color: red">
+      Bereich Unbekannt
+   </div>
+</div>

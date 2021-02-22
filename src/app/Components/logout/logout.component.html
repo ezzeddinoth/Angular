@@ -1,0 +1,6 @@
+<div *ngIf="username">
+  username: {{username}}
+  <form #form="ngForm" (ngSubmit)="onClickLogout()">
+    <input type="submit" value="logout">
+  </form>
+</div>
